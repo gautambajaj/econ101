@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Econ101</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+    <script src="2.js"></script>
+  </head>
+
+  <body>
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <img src="logo.png" height="50px" width="50px">
+  <a class="navbar-brand" href="#"><h3> Microeconomics Calculator</h3></a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form style="margin-left: 600px;" class="form-inline my-2 my-lg-0" method="get" action="http://www.google.com/search" target="_blank">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+      <div class="container col-md-6" id="card1">  
+       <div class="card text-center">
+        <div class="card-header">
+          Calculator / Last modified on 2017/01/16 22:53
+        </div>
+          <div class="card-block">
+            <h6 class="card-title">The Microeconomics Calculator has the most common microeconomics equations based on widely accepted university texts including the following:</h6><hr>
+              <div class="container myTable">
+                <table class="table table-inverse">
+                  <tbody>
+                    <tr>
+                      <td id="one" data-container="body" data-toggle="modal" data-target="#modal1">Midpoint Method for Price Elasticity of Demand</td>
+                      <td id="two" data-container="body" data-toggle="modal" data-target="#modal2">Price Elasticity of Demand</td>
+                    </tr>
+                    <tr>
+                      <td id="three" data-container="body" data-toggle="modal" data-target="#modal3">Income Elasticity of Demand</td>
+                      <td id="four" data-container="body" data-toggle="modal" data-target="#modal4">Cross-Price Elasticity of Demand</td>
+                    </tr>
+                    <tr>
+                       <td id="five" data-container="body" data-toggle="modal" data-target="#modal5">Price Elasticity of Supply</td>
+                      <td id="six" data-container="body" data-toggle="modal" data-target="#modal6">Average Fixed Cost</td>
+                    </tr>
+                    <tr>
+                      <td id="seven" data-container="body" data-toggle="modal"  data-target="#modal7">Average Variable Cost</td>
+                      <td id="eight" data-container="body" data-toggle="modal" data-target="#modal8">Average Total Cost</td>
+                    </tr>
+                    <tr>
+                      <td id="nine" data-container="body" data-toggle="modal" data-target="#modal9">Unit Cost</td>
+                      <td id="ten" data-container="body" data-toggle="modal" data-target="#modal10">Consumer Surplus</td>
+                    </tr>
+                    <tr>
+                      <td id="eleven" data-container="body" data-toggle="modal" data-target="#modal11">Producer Surplus</td>
+                      <td id="twelve" data-container="body" data-toggle="modal" data-target="#modal12">Total Surplus</td>
+                    </tr>
+                    <tr>
+                      <td id="thirteen" data-container="body" data-toggle="modal" data-target="#modal13">Marginal Cost</td>
+                      <td id="fifteen" data-container="body" data-toggle="modal" data-target="#modal4">Marginal Benefit</td>
+                    </tr>
+                    <tr>
+                      <td id="sixteen" data-container="body" data-toggle="modal" data-target="#modal5">Economic Profit</td>
+                      <td id="seventeen" data-container="body" data-toggle="modal" data-target="#modal6">Accounting Profit</td>
+                    </tr>
+                  </tbody>
+                </table><br>
+              </div>
+               <form method="get" action="http://www.google.com/search" target="_blank">
+                  <input type="text" name="q" size="31"
+                  maxlength="255" value="" placeholder="Search the Web..." />
+                  <input type="submit" value="Google Search" />
+               </form>                           
+              </div>
+              <div class="card-footer text-muted">
+                <p id="credit">Made by Gautam Bajaj, University of Waterloo &copy</p>
+              </div>
+            </div>  
+
+
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Midpoint Method For Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h5 id="special">
+                <div lang="latex">P.E.D = \frac{\%\Delta Q}{\%\Delta P}</div>
+                </h5>
+                <h5><br>Price Point 1 (P1)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 1 (Q1)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Price Point 2 (P2)</h5>
+                <input id="p2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 2 (Q2)</h5>
+                <input id="q2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> P.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h5 id="special">
+                <div lang="latex">P.E.D = \frac{Change \hspace{1 mm} in \hspace{1 mm} Quantity \hspace{1 mm} Demanded }{Change \hspace{1 mm} in  \hspace{1 mm}Price}</div>
+                </h5>
+                <h5><br>Change in Quantity Demand (%)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Change in Price (%)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> P.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Income Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">I.E.D = \frac{Change \hspace{1 mm} in \hspace{1 mm} Quantity \hspace{1 mm} Demanded }{Change \hspace{1 mm} in  \hspace{1 mm}Income}</div>
+                </h4>
+                <h5><br>Change in Quantity Demand (%)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Change in Income (%)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> I.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Cross Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">C.E.D = \frac{Change \hspace{1 mm} in \hspace{1 mm} Demand \hspace{1 mm} A }{Change \hspace{1 mm} in  \hspace{1 mm}Price \hspace{1 mm}B}</div>
+                </h4>
+                <h5><br>(CDA)% change in the Quantity Demanded of the first product</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>(CPB)% change in the Price of the second product</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> C.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Price Elasticity of Supply</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">P.E.S = \frac{\%\Delta Q}{\%\Delta P}</div>
+                </h4>
+                <h5><br>Price Point 1 (P1)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 1 (Q1)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Price Point 2 (P2)</h5>
+                <input id="p2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 2 (Q2)</h5>
+                <input id="q2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> P.E.S = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Midpoint Method For Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">Average Fixed Cost = \frac{Total \hspace{1 mm} Fixed \hspace{1 mm} Cost}{Quantity \hspace{1 mm} of  \hspace{1 mm}Output}</div>
+                </h4>
+                <h5><br>(FC)Total Fixed cost</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>(QO)Quantity of Output</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> AFC = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Midpoint Method For Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">Average Variable Cost = \frac{Total \hspace{1 mm} Variable \hspace{1 mm} Cost}{Quantity \hspace{1 mm} of  \hspace{1 mm}Output}</div>
+                </h4>
+                <h5><br>(vc)Variable cost</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>(q)Quantity of the Output/Good</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> AFC = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Midpoint Method For Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">P.E.D = \frac{\%\Delta Q}{\%\Delta P}</div>
+                </h4>
+                <h5><br>Price Point 1 (P1)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 1 (Q1)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Price Point 2 (P2)</h5>
+                <input id="p2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 2 (Q2)</h5>
+                <input id="q2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> P.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Midpoint Method For Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">P.E.D = \frac{\%\Delta Q}{\%\Delta P}</div>
+                </h4>
+                <h5><br>Price Point 1 (P1)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 1 (Q1)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Price Point 2 (P2)</h5>
+                <input id="p2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 2 (Q2)</h5>
+                <input id="q2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> P.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Midpoint Method For Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">P.E.D = \frac{\%\Delta Q}{\%\Delta P}</div>
+                </h4>
+                <h5><br>Price Point 1 (P1)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 1 (Q1)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Price Point 2 (P2)</h5>
+                <input id="p2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 2 (Q2)</h5>
+                <input id="q2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> P.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Midpoint Method For Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">P.E.D = \frac{\%\Delta Q}{\%\Delta P}</div>
+                </h4>
+                <h5><br>Price Point 1 (P1)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 1 (Q1)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Price Point 2 (P2)</h5>
+                <input id="p2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 2 (Q2)</h5>
+                <input id="q2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> P.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Midpoint Method For Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">P.E.D = \frac{\%\Delta Q}{\%\Delta P}</div>
+                </h4>
+                <h5><br>Price Point 1 (P1)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 1 (Q1)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Price Point 2 (P2)</h5>
+                <input id="p2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 2 (Q2)</h5>
+                <input id="q2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> P.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Midpoint Method For Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">P.E.D = \frac{\%\Delta Q}{\%\Delta P}</div>
+                </h4>
+                <h5><br>Price Point 1 (P1)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 1 (Q1)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Price Point 2 (P2)</h5>
+                <input id="p2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 2 (Q2)</h5>
+                <input id="q2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> P.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Midpoint Method For Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">P.E.D = \frac{\%\Delta Q}{\%\Delta P}</div>
+                </h4>
+                <h5><br>Price Point 1 (P1)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 1 (Q1)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Price Point 2 (P2)</h5>
+                <input id="p2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 2 (Q2)</h5>
+                <input id="q2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> P.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Midpoint Method For Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">P.E.D = \frac{\%\Delta Q}{\%\Delta P}</div>
+                </h4>
+                <h5><br>Price Point 1 (P1)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 1 (Q1)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Price Point 2 (P2)</h5>
+                <input id="p2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 2 (Q2)</h5>
+                <input id="q2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> P.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="modal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Midpoint Method For Price Elasticity of Demand</h4>
+      </div>
+      <div class="modal-body">
+                <h4 id="special">
+                <div lang="latex">P.E.D = \frac{\%\Delta Q}{\%\Delta P}</div>
+                </h4>
+                <h5><br>Price Point 1 (P1)</h5>
+                <input id="p1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 1 (Q1)</h5>
+                <input id="q1" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Price Point 2 (P2)</h5>
+                <input id="p2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br>Quantity Point 2 (Q2)</h5>
+                <input id="q2" type="number" class="form-control" placeholder="Enter value to begin calculating...">
+                <h5><br> P.E.D = <span id="ans"></span></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="click1" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+
+  </body>
+</html>

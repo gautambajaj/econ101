@@ -1,0 +1,67 @@
+body {
+    background-image: url("white.png")
+}
+
+h3 {
+    margin-left: 15px
+}
+
+h4  {
+    color: white;
+    text-align: center;
+}
+
+.popover {
+    background-color: black;
+    color: white
+}
+
+h5, .modal-title {
+    text-align: left;
+}
+
+#group {
+    text-align: center;
+}
+
+#form1 {
+    float: right;
+}
+
+.myTable {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    border: 1px solid;
+}
+
+td:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+
+}
+
+#special {
+    text-align: center;
+}
+
+.modal-footer, .modal-header {
+    background-color: #1C2833;
+    text-align: center;
+}
+
+#tab {
+    margin-top: 100px;
+    margin-top: ;
+}
+
+#credit{
+    font-size: 13px;
+}
+
+#card1 {
+    margin-top: 20px
+}
